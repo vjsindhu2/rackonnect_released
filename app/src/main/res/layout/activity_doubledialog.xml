@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/et_ico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Please specify the players which didn't turn up"
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#FF727272" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/opp_one_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@drawable/p" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/opp_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rohan Awasthi"
+                        android:textColor="@color/color_black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/opp_one_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Novice"
+                        android:textColor="#8E8E8E"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/opp_one_toggle"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:background="@drawable/selectortoggle"
+                    android:textOff=""
+                    android:textOn=""/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/opp_two_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@drawable/p" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/opp_two_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rohan Awasthi"
+                        android:textColor="@color/color_black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/opp_two_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Novice"
+                        android:textColor="#8E8E8E"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/opp_two_toggle"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:background="@drawable/selectortoggle"
+                    android:textOff=""
+                    android:textOn=""/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/opp_three_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@drawable/p" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/opp_three_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Prateek Joshi"
+                        android:textColor="@color/color_black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/opp_three_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Novice"
+                        android:textColor="#8E8E8E"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/opp_three_toggle"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:background="@drawable/selectortoggle"
+                    android:textOff=""
+                    android:textOn=""/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#CECECE"
+                android:text="Note: Players might be discredited or blacklisted for not turning up"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#FF727272" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="CANCEL"
+                android:textStyle="bold"
+                android:textColor="#FF727272"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:textColor="#FF0F33B8"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

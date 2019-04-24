@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Rackonnect</string>
+
+    <string name="facebook_application_id">579663299144769</string>
+    <string name="fb_login_protocol_scheme">fb579663299144769</string>
+
+    <string name="drawer_open">Menu opened</string>
+
+
+    <string name="app_service_name">main service</string>
+
+
+    <string name="drawer_close">Menu closed</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="msg_unable_connect">Unable to Connect to Server</string>
+    <string name="TRY_AGAIN">Try Again</string>
+    <string name="CLOSE">Close</string>
+    <string name="title_unable_connect">Unable to Connect</string>
+    <string name="GOT_IT">Got it</string>
+    <string name="amateure_str">Amateur</string>
+    <string name="intermediate_str">Semi Pro</string>
+    <string name="pro_str">Pro</string>
+    <string name="expert_str">Expert</string>
+    <string name="no_network">Oops Somthing went wrong please\n Try Again!</string>
+    <string name="err_fname">Enter Valid Name</string>
+    <string name="err_mName">Special Character not allowed in Match Name</string>
+    <string name="err_mempty">Please Enter Match Name</string>
+    <string name="err_age">Minimum age Criteria must be grater than 10 year...</string>
+    <string name="err_fname_not_empty">Enter your name</string>
+    <string name="err_age_not_empty">Enter your Date of Birth</string>
+    <string name="title_activity_location_fetcher">Map</string>
+    <string name="search_stadium_court_area">Search Stadium, Court Area</string>
+    <string name="please_confirm_the_score_within_30_minutes_of_the_request_otherwise_it_would_be_invalidated">Please confirm the score within 30 minutes of the request otherwise it would be invalidated.</string>
+    <string name="morning06am_12noon">Morning\n06AM-12NOON</string>
+    <string name="afternoon12_noon_5_pm">Afternoon\n12 Noon - 5 PM</string>
+    <string name="evening_5_pm_10_pm">Evening\n5 PM - 10 PM</string>
+    <string name="any">Anytime</string>
+    <string name="err_location_not_empty"> Match location is Empty</string>
+    <string name="err_date_not_empty">Date is Empty</string>
+    <string name="err_startime_not_empty">Match Start time is empty</string>
+    <string name="err_endtime_not_empty">End Time is empty</string>
+    <string name="err_invalidefee">Registration Fee should be less than Rs. 100 or grater than Rs. 20</string>
+    <string name="err_regfee_not_empty">Empty Field</string>
+
+
+    <plurals name="days">
+        <item quantity="zero">%d Days</item>
+        <item quantity="one">%d Day</item>
+        <item quantity="other">%d Days</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero">%d Hours</item>
+        <item quantity="one">%d Hour</item>
+        <item quantity="other">%d Hours</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="zero">%d Minutes</item>
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minutes</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="zero">%d Seconds</item>
+        <item quantity="one">%d Second</item>
+        <item quantity="other">%d Seconds</item>
+
+
+    </plurals>
+
+
+    <string name="amature_string"> For beginners to learn the sport and test their skills.</string>
+
+    <string name="semipro_string">Players  having played for a minimum of 1 year, with good skills and wanting to play competitive sport.</string>
+    <string name="pro_string"> Players with minimum 2 years experience having played tournaments in school, college or clubs and look to play at higher levels. </string>
+    <string name="expert_string"> Very experienced and a perfectionist in the sport, having played national level, state level and higher tournaments.</string>
+    <string name="err_birth">Minimum age 10 year</string>
+
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="toast_image_intent_null">Image picker option is missing</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="terms">By clicking on continue, you are agreeing to the <strong>Terms &amp; Conditions</strong> stated here</string>
+
+
+    <string name="fivepoints"><![CDATA[<ol>
+<li>
+We are a Platform connecting people to play sports with, hence we are not responsible if
+anyone is doing any kind of misbehaviour &amp; misconduct with each other.
+</li>
+
+<li>
+During the game if any injury occurs between the players, we are not holding any
+responsibility for the same.
+</li>
+<li>
+We are strictly against the unlawful activity during games, Rackonnect App is not involved
+in any kind of private betting.
+</li>
+<li>We believe in sportsmanship, you don’t have to be serious about winning or losing all the
+time, its just a game for fun.</li>
+<li>
+For more information regarding Rackonnect App Terms &amp; Conditions, please follow the
+link……………….
+</li>
+</ol>
+
+
+]]>
+
+    </string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="date_format_yesterday">yesterday</string>
+    <string name="date_format">date format</string>
+    <string name="date_format_today">date format today</string>
+    <string name="date_format_current_month">date format current month</string>
+    <string name="isOffline">Ofline</string>
+    <string name="isOnline">Online</string>
+    <string name="lastSeen">last seen</string>
+    <string name="isTyping">Typing</string>
+    <string name="reply_message">Reply</string>
+    <string name="key_enter_send">enter_send</string>
+    <string name="key_message_font_size">message_font_size</string>
+    <string name="key_conversations_tones">conversation_tones</string>
+    <string name="key_message_notifications_settings_tone">message_notifications_settings_tone</string>
+    <string name="key_message_notifications_settings_vibrate">message_notifications_settings_vibrate</string>
+    <string name="key_message_notifications_settings_light">message_notifications_settings_light</string>
+    <string name="key_message_group_notifications_settings_tone">message_group_notifications_settings_tone</string>
+
+
+</resources>

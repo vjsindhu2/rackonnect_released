@@ -1,0 +1,154 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'io.fabric'
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion("28.0.3")
+    defaultConfig {
+        applicationId "com.sportskonnect"
+        minSdkVersion 19
+        targetSdkVersion 27
+
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+//    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+//    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+    implementation 'com.firebaseui:firebase-ui-auth:4.2.1'
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation "com.android.support:exifinterface:27.1.1"
+    implementation "com.facebook.android:facebook-login:4.39.0"
+
+    // library for api
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    //image compressor
+    implementation 'id.zelory:compressor:2.1.0'
+//validation api
+    implementation 'com.basgeekball:awesome-validation:4.2'
+
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.adhishlal:gifloader:1.1'
+    implementation 'com.github.jorgecastilloprz:fillableloaders:1.03@aar'
+
+    implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
+    implementation 'me.jessyan:progressmanager:1.5.0'
+    implementation 'com.basgeekball:awesome-validation:4.2'
+//d
+    implementation "com.google.android.gms:play-services-maps:16.1.0"
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+    implementation 'com.github.ozodrukh:CircularReveal:2.0.1'
+    implementation 'com.rockerhieu.emojicon:library:1.3.3'
+
+/*
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+*/
+
+//    implementation 'com.google.android.libraries.places:1.0.0'
+    implementation 'com.google.android.libraries.places:places-compat:1.0.0'
+//    implementation 'com.google.android.libraries.places:1.0.0'
+    implementation 'com.github.marlonlom:timeago:4.0.1'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+        transitive = true;
+    }
+    implementation 'com.bestsoft32.tayyab:tt-fancy-gif-dialog:1.0.2'
+//    implementation('io.socket:socket.io-client:0.7.0') {
+//        exclude group: 'org.json', module: 'json'
+//    }
+
+
+    implementation 'com.github.nkzawa:socket.io-client:0.3.0'
+//    implementation 'com.takisoft.datetimepicker:datetimepicker:1.0.0'
+    implementation 'com.github.drawers:SpinnerDatePicker:2.0.1'
+
+//    implementation "io.realm:realm-annotations:1.0.0"
+//    implementation "io.realm:realm-android-library:1.0.0"
+//    annotationProcessor "io.realm:realm-annotations-processor:1.0.0"
+    implementation "com.google.android.gms:play-services-gcm:16.1.0"
+    implementation "com.google.android.gms:play-services-auth:16.0.1"
+
+    implementation 'com.wdullaer:materialdatetimepicker:4.1.2'
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    // paytm dependency
+    implementation('com.paytm:pgplussdk:1.3.1') {
+        transitive = true;
+    }
+
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+    implementation 'com.github.mreram:showcaseview:1.1'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#FFFFF0"
+    android:orientation="vertical"
+    android:id="@+id/nav_drawer">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:text="CREATE MATCH/TOURNAMENT"
+        android:background="#0F33B8"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textColor="@color/color_white"
+        android:textSize="12sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/nav1"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="EXPLORE MATCHES"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#676760"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagenav2"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/nav2"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            android:text="EXPLORE TOURNAMENTS"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#676760"
+            android:layout_toRightOf="@+id/imagenav2"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/imagenav3"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/nav3"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="LEADERBOARD"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="#676760"
+            android:layout_toRightOf="@+id/imagenav3"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/imagenav4"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/nav4"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="SCORING REQUESTS"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:textColor="#676760"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/imagenav4"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/imagenav5"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/nav5"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="OFFERS"
+            android:textSize="12sp"
+            android:textColor="#676760"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imagenav5"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginLeft="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7F7F77"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="Help"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7F7F77"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="11sp"
+            android:text="About"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7F7F77"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Payments"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7F7F77"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="Privacy Policy"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/rlSetting"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagenav6"
+            android:paddingTop="10dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/settings"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/title6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Settings"
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="#7F7F77"
+            android:layout_toRightOf="@+id/imagenav6"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

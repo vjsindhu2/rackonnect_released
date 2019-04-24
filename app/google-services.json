@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "226909670194",
+    "firebase_url": "https://rackonnect-704b1.firebaseio.com",
+    "project_id": "rackonnect-704b1",
+    "storage_bucket": "rackonnect-704b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226909670194:android:419b1144ad65f441",
+        "android_client_info": {
+          "package_name": "com.sportskonnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226909670194-rpbtv82kqo7661ppl380quom0nll273n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHVJ6jJ-eEqYCn0WESJ0SRP_5Ioi4eOI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

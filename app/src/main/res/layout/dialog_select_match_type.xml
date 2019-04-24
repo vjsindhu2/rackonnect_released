@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/et_ico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Select One"
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/create_match_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+
+                    android:padding="@dimen/_10sdp"
+                    android:text="Doubles Match"
+
+
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@color/color_black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/create_tour_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+
+                    android:padding="@dimen/_10sdp"
+                    android:text="Tournament"
+
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#FF727272" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="Cancel"
+                android:textColor="#FF727272"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="OK"
+                android:textColor="#FF0F33B8"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

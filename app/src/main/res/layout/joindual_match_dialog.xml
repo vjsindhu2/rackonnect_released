@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/et_ico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Please Select a group"
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#FF727272" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="0.50"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/group_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:alpha="1"
+                    android:gravity="center"
+                    android:text="GROUP 'A'"
+                    android:textColor="@color/color_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:id="@+id/group_a_one_ll"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="start|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/group_a_member_one_img"
+                        android:layout_width="@dimen/_25sdp"
+                        app:civ_border_color="@color/color_black"
+                        app:civ_border_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/circle" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/group_a_member_one_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---- ----"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/group_a_member_one_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/group_a_member_one_name"
+                            android:text="----"
+                            android:textColor="#FF417505"
+                            android:textSize="8sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/group_a_two_ll"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="start|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/group_a_member_two_img"
+                        android:layout_width="@dimen/_25sdp"
+                        app:civ_border_color="@color/color_black"
+                        app:civ_border_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/circle" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/group_a_member_two_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---- ----"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/group_a_member_two_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/group_a_member_two_name"
+                            android:text="----"
+                            android:textColor="#FF417505"
+                            android:textSize="8sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_weight="0.50"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/group_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:alpha="1"
+                    android:gravity="center"
+                    android:text="GROUP 'B'"
+                    android:textColor="@color/color_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/group_b_one_ll"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="start|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/group_b_member_one_img"
+                        android:layout_width="@dimen/_25sdp"
+                        app:civ_border_color="@color/color_black"
+                        app:civ_border_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/circle" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/group_b_member_one_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---- ----"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/group_b_member_one_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/group_b_member_one_name"
+                            android:text="----"
+                            android:textColor="#FF417505"
+                            android:textSize="8sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/group_b_two_ll"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="start|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/group_b_member_two_img"
+                        android:layout_width="@dimen/_25sdp"
+                        app:civ_border_color="@color/color_black"
+                        app:civ_border_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/circle" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/group_b_member_two_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---- ----"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/group_b_member_two_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/group_b_member_two_name"
+                            android:text="----"
+                            android:textColor="#FF417505"
+                            android:textSize="8sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#FF727272" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="CANCEL"
+                android:textColor="#FF727272"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_join"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="JOIN"
+                android:textColor="#FF0F33B8"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

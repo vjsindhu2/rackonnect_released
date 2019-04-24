@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F33B8</color>
+    <color name="colorPrimaryDark">#0F33B8</color>
+    <color name="colorAccent">#0F33B8</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_darkBlue">#0F33B8</color>
+    <color name="color_back">#F6F6F6</color>
+    <color name="color_gray">#C7C4EB</color>
+    <color name="color_gray_90">#9a99a1</color>
+
+
+    <color name="color_text_blue">#3D2581</color>
+    <color name="radius_color">#2bb69f9f</color>
+
+    <color name="color_blue">#3F5BC5</color>
+    <color name="colorGrayStatus">#9E9E9E</color>
+
+
+    <color name="squash_color">#AE5B0A</color>
+    <color name="table_tenis_color">#DAA520</color>
+    <color name="bedmanten_color">#0F33B8</color>
+    <color name="tenis_color">#FF0F33B8</color>
+    <color name="circle_color">#5a979db4</color>
+    <color name="grayleader">#F3F3F3</color>
+    <color name="gray10">#CCD9F3</color>
+
+
+    <color name="cup_one_color">#DAA520</color>
+    <color name="cup_two_color">#9E9E9E</color>
+    <color name="cup_three_color">#AE5B0A</color>
+    <color name="cup_four_color">#FFFFFF</color>
+    <color name="cup_five_color">#0F33B8</color>
+
+
+</resources>

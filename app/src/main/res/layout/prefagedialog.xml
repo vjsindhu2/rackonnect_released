@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tooltip_nav_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@drawable/nav_up" />
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:background="@drawable/tooltip_bg"
+       android:layout_width="@dimen/_240sdp"
+       android:layout_height="@dimen/_80sdp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_marginLeft="@dimen/_20sdp"
+               android:layout_marginRight="@dimen/_20sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.50"
+                   android:gravity="start"
+                   android:padding="10dp"
+                   android:text="Age"
+                   android:textAllCaps="true"
+                   android:textColor="@color/colorPrimary"
+                   android:textStyle="bold" />
+
+
+               <TextView
+                   android:id="@+id/range_lbl"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.50"
+                   android:gravity="right"
+                   android:padding="10dp"
+                   android:text="---"
+                   android:textAllCaps="true"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:paddingLeft="@dimen/_5sdp">
+
+               <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                   android:id="@+id/ageSeekbar"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_20sdp"
+                   android:layout_marginTop="@dimen/_5sdp"
+                   android:layout_marginRight="@dimen/_20sdp"
+                   app:bar_color="#E0E4F1"
+                   app:bar_highlight_color="#0F33B8"
+                   app:corner_radius="10"
+
+                   app:data_type="_integer"
+                   app:gap="6"
+                   app:left_thumb_color="#0F33B8"
+                   app:left_thumb_color_pressed="#0F33B8"
+                   app:max_value="65"
+                   app:min_value="10"
+                   app:right_thumb_color="#0F33B8"
+                   app:right_thumb_color_pressed="#0F33B8" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_20sdp"
+                   android:layout_marginRight="@dimen/_20sdp"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/age_minval"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.50"
+                       android:text="--"
+
+                       android:textSize="@dimen/_10sdp" />
+
+                   <TextView
+                       android:id="@+id/age_maxval"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="right|end"
+                       android:layout_weight="0.50"
+                       android:gravity="right|end"
+                       android:text="--"
+                       android:textSize="@dimen/_10sdp" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+</LinearLayout>

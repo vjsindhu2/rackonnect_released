@@ -1,0 +1,629 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F0EF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rrMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_7sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.1"
+                        android:onClick="finishmatchscorReqActivity">
+
+                        <ImageView
+
+                            android:id="@+id/btnBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_back" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvMin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MATCH SCORING REQUEST"
+                            android:textColor="@color/color_white"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/game_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SQUASH"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:text="ROHAN v ANKUSH"
+                            android:textColor="#FF6CD974"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="12 JANUARY"
+                            android:textColor="#FFD9D9D9"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="0.50"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/game_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/squash2" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_30minmsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/please_confirm_the_score_within_30_minutes_of_the_request_otherwise_it_would_be_invalidated"
+            android:textColor="@color/color_black"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00:04m"
+                android:textColor="#FFD0021B"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lbl_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTime"
+                android:layout_alignParentRight="true"
+                android:text="left"
+                android:textColor="#FFD0021B"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_weight="1.5"
+        android:background="#FFFFF0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/singlesdetail_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fl1"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/host_img"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/p"
+                    app:civ_border_color="@color/color_black"
+                    app:civ_border_width="0dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/team_a_person_two"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/p"
+                    app:civ_border_color="@color/color_black"
+                    app:civ_border_width="0dp" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/fl1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_host_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GROUP 'A'"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_host_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AMATEUR"
+                    android:textSize="8sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/fl2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_opponet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GROUP 'B'"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_opponet_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="SEMI-PRO"
+                    android:textSize="8sp" />
+
+
+            </LinearLayout>
+
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fl2"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/opponent_img"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/pp"
+                    app:civ_border_color="@color/color_black"
+                    app:civ_border_width="0dp" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/team_b_person_two"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/p"
+                    app:civ_border_color="@color/color_black"
+                    app:civ_border_width="0dp" />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="1">
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_toRightOf="@+id/tvSc"
+                android:layout_weight="1"
+                android:background="#FF0F33B8" />
+
+
+            <TextView
+                android:id="@+id/tvSc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SCORING (BEST OF THREE)"
+                android:textColor="#FF0F33B8"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_toLeftOf="@+id/tvSc"
+                android:layout_weight="1"
+                android:background="#FF0F33B8" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+
+            <FrameLayout
+                android:id="@+id/fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp">
+
+
+                <TextView
+                    android:id="@+id/user_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textColor="#FF6CD974"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/host_won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="0dp"
+                android:text="WON"
+                android:textColor="#FF6CD974"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <FrameLayout
+                android:id="@+id/fl4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_27sdp">
+
+
+                <TextView
+                    android:id="@+id/opponents_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="#FF6CD974"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/opponent_won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl4"
+                android:layout_alignStart="@+id/fl4"
+
+                android:layout_marginStart="-4dp"
+                android:layout_marginTop="-1dp"
+                android:text="WON"
+                android:textColor="#FF6CD974"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/note_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Note: Player didn't Update score..."
+            android:textColor="#ff0000"
+            android:textStyle="normal"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+    <!--// end of main ll-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_round"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="VALIDATE SCORE"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white" />
+
+
+            <LinearLayout
+                android:id="@+id/validated_player_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Validated till now by"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/verified_opponents_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/verified_opponents_name_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="10sp" />
+
+
+                        <TextView
+                            android:id="@+id/verified_opponents_name_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:orientation="horizontal">
+
+                    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentTop="true">-->
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/v_opponent_one_img"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/circle" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/v_opponet_two_img"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toEndOf="@+id/v_opponent_one_img"
+                        android:layout_toRightOf="@+id/v_opponent_one_img"
+                        android:src="@drawable/circle" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/v_opponent_three_img"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                         android:layout_marginRight="3dp"
+                        android:src="@drawable/circle" />
+
+                    <!--</FrameLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_toRightOf="@+id/tvOne"
+                    android:text="Something doesn’t seem right?"
+                    android:textColor="#3D3C3C"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/resend_score_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/tvTwo"
+                    android:text="RESEND UPDATED SCORE TO PLAYERS"
+                    android:textColor="#FF0F33B8"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/de">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ivLogo"
+        android:layout_marginTop="@dimen/_20sdp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWel"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/ivLogo"
+        android:text="welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/_19sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWel1"
+        android:layout_below="@+id/tvWel"
+        android:text="TO RACKONNECT"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/_12sdp"/>
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/button_round"
+        android:padding="@dimen/_12sdp"
+        android:drawableRight="@drawable/ic_icon"
+        android:text="Let's Play"
+        android:textColor="@color/color_white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

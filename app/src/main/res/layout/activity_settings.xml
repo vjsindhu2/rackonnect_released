@@ -1,0 +1,412 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rrMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:onClick="finishSetting"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        app:srcCompat="@drawable/ic_back" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/main_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/tvHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:gravity="center|start"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:text="NOTIFICATION PREFERENCES"
+                android:textColor="#CACACA"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Game notifications"
+                        android:textColor="@color/color_black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+
+                            android:id="@+id/btnPush_notification"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:background="#0F33B8"
+                            android:text="Push Notifications "
+                            android:textColor="@color/color_white"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnEmail_notification"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="#DDE0ED"
+                            android:text="Email Notifications"
+                            android:textColor="#FF0F33B8"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Cancelled Match/Tournament"
+                        android:textColor="@color/color_black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnmatch_pushnoti"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:background="#0F33B8"
+                            android:text="Push Notifications "
+                            android:textColor="@color/color_white"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnmatch_email_pushnoti"
+
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="#0F33B8"
+                            android:text="Email Notifications"
+                            android:textColor="@color/color_white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Scoring Requests"
+                        android:textColor="@color/color_black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+
+                            android:id="@+id/scoringpush_noti"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:background="#0F33B8"
+                            android:text="Push Notifications "
+                            android:textColor="@color/color_white"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/score_email_noti"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="#DDE0ED"
+                            android:text="Email Notifications"
+                            android:textColor="#FF0F33B8"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="#C4C4C4" />
+
+
+            // end of main ll
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/llBottom"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="SOUND SETTINGS"
+                        android:textColor="#CACACA"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Notifications"
+                            android:textColor="@color/color_black"
+                            android:textSize="12sp" />
+
+                        <ToggleButton
+                            android:id="@+id/notification_toggle"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_alignBaseline="@+id/tv1"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="9dp"
+                            android:layout_marginRight="9dp"
+                            android:background="@drawable/selectortoggle"
+                            android:textOff=""
+                            android:textOn="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tvChats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Chats"
+                            android:textColor="@color/color_black"
+                            android:textSize="12sp" />
+
+                        <ToggleButton
+                            android:id="@+id/chat_toggle"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_alignBaseline="@+id/tvChats"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="9dp"
+                            android:layout_marginRight="9dp"
+                            android:background="@drawable/selectortoggle"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#C4C4C4" />
+
+            <LinearLayout
+                android:id="@+id/llBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/give_us_a_review_landmine_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="SEND FEEDBACK"
+                    android:textColor="#FF0F33B8"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvRateUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:text="RATE US ON PLAY STORE"
+                        android:textColor="#FF0F33B8"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/tvDel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvRateUs"
+                        android:layout_marginTop="15dp"
+                        android:text="Delete Account"
+                        android:textColor="#FFD0021B"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDel"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:text="v1.0"
+                        android:textColor="#FF000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
